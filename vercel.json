@@ -1,7 +1,7 @@
 {
   "buildCommand": "cd agent-ui && npm run build",
   "installCommand": "cd agent-ui && npm install",
-  "outputDirectory": "agent-ui/dist",
+  "outputDirectory": "project-viewer-with-chat/agent-ui/dist",
   "framework": "vite",
   "rewrites": [
     {
