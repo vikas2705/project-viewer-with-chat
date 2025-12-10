@@ -1,4 +1,3 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
 import { sendSafe } from '../utils/websocket.js';
 import { getMockResponse } from '../utils/mockResponses.js';
 import { sleep } from '../utils/sleep.js';
