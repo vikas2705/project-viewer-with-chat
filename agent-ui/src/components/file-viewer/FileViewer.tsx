@@ -83,24 +83,7 @@ const FileViewer: React.FC = () => {
     });
   }, [expanded, selectedFile, toggleFolder, handleSelectFile]);
 
-  // const CodeBlock = ({ file }: { file: FileNode }) => {
-  //   const code = file.content ?? '// No preview available'
-  //   return (
-  //     <pre className="h-full w-full overflow-auto rounded-2xl bg-slate-900 p-6 text-sm text-emerald-100 shadow-inner">
-  //       <code>{code}</code>
-  //     </pre>
-  //   )
-  // }
-
-
   const fileList = useMemo(() => Object.values(flattenFiles), [flattenFiles]);
-
-  const handleRandomFile = useCallback(() => {
-    if (fileList.length > 0) {
-      const randomFile = fileList[Math.floor(Math.random() * fileList.length)];
-      setSelectedFile(randomFile);
-    }
-  }, [fileList]);
 
   return (
     <div className="flex h-full w-full">
@@ -115,15 +98,6 @@ const FileViewer: React.FC = () => {
           </div>
         </div>
         <div className="flex-1 overflow-auto p-2">{renderTree(fileTree)}</div>
-        <div className="border-t border-gray-200 p-4">
-          <button
-            className="w-full rounded-lg border border-emerald-200 bg-white px-4 py-2 text-sm font-medium text-emerald-600 hover:bg-emerald-50 hover:shadow-sm transition-all"
-            onClick={handleRandomFile}
-            aria-label="Select a random file"
-          >
-            Random file
-          </button>
-        </div>
       </div>
 
      

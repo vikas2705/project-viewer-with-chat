@@ -162,7 +162,6 @@ concurrently "cd agent-server && npm run dev" "cd agent-ui && npm run dev"
   - Browse project files
   - View file contents with syntax highlighting
   - Expand/collapse folders
-  - Random file selector
 
 ## Development Scripts
 
