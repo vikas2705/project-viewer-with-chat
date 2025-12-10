@@ -1,5 +1,6 @@
 /**
  * Safely sends a message to a WebSocket client
+ * dummy comment
  * @param {WebSocket} ws - WebSocket connection
  * @param {object} data - Data to send
  * @returns {boolean} - Whether the message was sent successfully
